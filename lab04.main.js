@@ -122,7 +122,6 @@ function sendRequest(callOptions, callback) {
    */
   const requestOptions = {};
   request(requestOptions, (error, response, body) => {
-    console.log(error);
     processRequestResults(error, response, body, (processedResults, processedError) => callback(processedResults, processedError));
   });
 }
