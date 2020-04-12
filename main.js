@@ -93,6 +93,7 @@ function processRequestResults(error, response, body, callback) {
    * it must call function isHibernating.
    */
    //isHibernating
+    isHibernating(response);
     if(error){
         callback(null, error);
     }else{
